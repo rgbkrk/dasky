@@ -1,7 +1,5 @@
-FROM python:3
+FROM dask/base
 
-RUN pip install dask pyzmq dill
-RUN pip install toolz
 ADD sched.py /
 
 EXPOSE 4444
